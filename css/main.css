@@ -7,15 +7,16 @@
 .clearfix:after {
     clear: both;
 }
-
+/*color https://color.adobe.com/Luxe-NY-color-theme-8354434/edit/?copy=true&base=2&rule=Custom&selected=2&name=Copy%20of%20Luxe%20NY&mode=rgb&rgbvalues=0.0156863,0.0745098,0.25098,0.145098,0.235294,0.34902,0.94902,0.94902,0.94902,0.85098,0.721569,0.333333,0.74902,0.603922,0.337255&swatchOrder=0,1,2,3,4*/
 
 *{
     font-family: 'Roboto', sans-serif;
-    background-color: #152b4f;
+    background-color: #253C59;
+    color: #F2F2F2;
 }
 
 html {
-    color: #222;
+    color: #D9B855;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -31,9 +32,6 @@ a{
     text-decoration: none;
 }
 
-p{
-    color:white;
-}
 
 /********FORM*********/
 
@@ -96,10 +94,12 @@ textarea{
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #3a845a;
+  background-color: #BF9A56;
 }
 /*SMOL SCREEN FORM*/
+form{
 
+}
 #tiptitle{
     margin:auto;
     width: 80%;
@@ -160,14 +160,14 @@ textarea{
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #3a845a;
+  background-color: #BF9A56;
 }
 
 
 /*PHOTOS*/
 
 .btn {
-  background-color: white;
+  background-color: BF9A56;
   padding: 6px 12px;
   margin: 0 10px 0 0;
   color: purple;
@@ -208,19 +208,19 @@ nav{
   margin: 0px 100px 0px 100px;
 }
 #title{
-  color: yellow;
+  color: #D9B855;
   font-style:italic;
   font-size: 5rem;
   width: 90%;
   margin-top: 10px;
 }
 li a{
-  color: maroon;
-
+  color: #041340;
 }
 
 li{
-  background-color: gray;
+  background-color: #BF9A56;
+
   padding:10px;
   margin:4px;
   width: 15%;

@@ -49,38 +49,39 @@ function backButton () {
 	
 };
 
+// TOP NAVIGATION
+
+$(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('#nav');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                top: 10,
+                left: nav.offset().left,
+                width: nav.width(),
+            });
 
 
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
 
-// can i make a js query to replace an entire block of html, for the nav?
+            isFixed = false;
+        }
+    });
+});
 
-
-
-// AJAX FOR EPISODES
-//RSS FEED 
-//http://simplecast.com/podcasts/1671/rss
-
-
-$.ajax({
-  url: "https://www.gossipgirls.simplecast.fm/",
-  context: document.body,
-    xhrFields: {
-    // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
-    // This can be used to set the 'withCredentials' property.
-    // Set the value to 'true' if you'd like to pass cookies to the server.
-    // If this is enabled, your server must respond with the header
-    // 'Access-Control-Allow-Credentials: true'.
-    withCredentials: false
-  },
-
-}).done(function(data) {
-console.log('data')});
-
-// var xdr = new XDomainRequest();
-// xdr.open("get", "https://www.gossipgirls.simplecast.fm/");
-// xdr.onload = function(data){
-// 	console.log(data);
-//     //do something
-// };
+//ADD JS TO CREATE A TINY LOGO OF GOSSIP GIRLS WHEN THE TOP LOGO IS MISSING
 
 

@@ -11,33 +11,101 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" href="css/homepage.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
     </head>
     <body >
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div id="main">
+   <!-- SPLASH -->
+        <!--<div id="main">
             <section id="border">
                 <h1 id="gossipgirls">GOSSIP GIRLS </h1>
-                <p id="description">Join C and S as they navigate through all 7 seasons of Gossip Girl. Yes, they know it ended in 2012.</p>
+              
                 <nav>
-                    <ul>
-                        <li><a href="episodes.html">Episodes</a></li> 
-                        <li><a href="about.html">About</a></li> 
-                        <li><a href="twitter.html">Twitter</a></li> 
-                        <li><a href="photos.html">Photos</a></li> 
-                        <li><a href="contact.html">Contact Us</a></li> 
-                    </ul>
-                </nav>
+
             </section> 
          </div>
+        -->
+        <div id="wrap">
+            <div id="header">
+                <img src="header.png" id="logo"><br style="clear:both" /></div>
+                    <div id="navWrap">
+                        <div id="nav">
+                        <ul>
+                            <li><a href="#episodes" class="smoothScroll">Episodes</a></li>
+                            <li><a href="#about" class="smoothScroll">About Us</a></li>
+                            <li><a href="#gallery" class="smoothScroll">Fashion</a></li>
+                            <li><a href="#contact" class="smoothScroll">Tips</a></li>
+                        </ul>    
+                        <br class="clearLeft" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- EPISODES -->
+        <div id="episodes">
+            <a name="episodes"></a>
+            <h1 id="headertitle">Recent Episodes</h1>
+            <section class="episode">
+                <p class="releasedate">January 16, 2017</p>
+                <p class="episodetitle">Episode 33.5 - MOVIE REVIEW - Chalet Girl, starring Ed Westwick</p>
+                <div class="embedplayer">
+                <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/57704?style=light' width='100%'></iframe>
+                </div>
+                <p class="episodedescription">
+                    Wakey wakey, Upper East Podcasters! We are taking short holiday from New York and visiting a chalet in the Austria mountains. We've encountered our friend Chuck Bass, who now has an English accent (his real accent!) and he's now going by Jonny. Felicity Jones is there too!
+                    <br>
+                    C and S review the 2011 film CHALET GIRL, a movie about a girl that rediscovers her joy of outdoor sports while on the slopes. While delighting in snowboarding, she meets a rich guy (played by Ed Westwick), that owns that place where she works. Trust us, it's a delight. Ed Westwick may have typecast himself as a Rich Teen™.
+                    <br>
+                    We will be back in a couple of weeks with our regularly scheduled episodes!
+                    <br>
+                    We will be back in a couple of weeks with our regular scheduled episodes!
+                </p>
+            </section>
+            <section class="episode">
+                <p class="releasedate">January 9, 2016</p>
+                <p class="episodetitle">Episode 33 - S2x15: Gone with the Will</p>
+                <div class="embedplayer">
+               <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.com/e/56425?style=light' width='100%'></iframe>
+                </div>
+                <p class="episodedescription">Wakey wakey, Upper East Podcasters. The tea is served up, ready and piping hot for your drinking pleasure! First up, the Bart Bass will is read, and we find out the eternal question of Who is the Boss? Spoiler: it's not Tony Danza. Will Blair be at Chuck's side, or cast aside by the other Bass? And what of Lily and Rufus? Will their road trip to find their son land them finding something else along the way? Will Dan ever tell Serena? Or will she find out from a secret source? And will Jenny stop stalking Eric and Jonathan? We'll never tell... 
+                </p>
+            </section>
+        </div>
 
+<!-- ABOUT -->
+
+            <a name="about"></a>
+            <h1 id="headertitle">About Us</h1>
+
+
+<!-- GALLERY -->
+
+            <a name="gallery"></a>
+            <h1 id="headertitle">Fashion</h1>
+
+
+
+<!-- FORM -->
+
+    <div id="form">
+        <a name="about"></a> 
+        <h1 id="headertitle">Send Gossip Girls a Tip!</h1>
+        <form action="https://formspree.io/gossipgirlspodcast@gmail.com" method="post" class="clearfix">
+            <div id="rightbox">
+                <input type="text" name="fullName" id="fullName" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <input type="text" name="charac" id="charac" placeholder="Favorite Character">
+            </div>
+            <div id='dish' class="clearfix">
+              <textarea name="message" id="message" placeholder="What's the dish?"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

@@ -1,44 +1,21 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    /*background-color: #253C59;*/
-    color: #F2F2F2;
-}
-
-html {
-    color: #D9B855;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 
-li{
-    list-style-type: none;
-    display:inline-block;
-    width: 15%;
+@media (max-width: 600px) {
+  /*form*/
 
-}
-a{
-    text-decoration: none;
-}
-
-/*==========SPLASH PAGE========= */
-
-#main{
-    background-image: url("../img/chersubi.png");
-}
-
-  /*********form********/
-
-  #tiptitle{
-      width: 60%;
+  #nav{
+    display:none;
   }
+
+
+
   #rightbox{
       width: 100%;
       margin:0;
       text-align: center;
   }
   #fullName, #email, #charac{
-    width:60%;
+    width:80%;
     margin:5px;
     padding: 10px;
     height: 40px;
@@ -54,10 +31,86 @@ a{
     -webkit-box-sizing: border-box;
   }
   #dish{
-    width: 60%;
+    width: 80%;
     margin:auto;
   }
   #submit{
     width: 60%;
   }
 
+    /*FOOTER*/
+#footer li{
+    clear: both;
+    font-size: 2rem;
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 2px;
+    height: 1rem;
+  }
+
+    #footer ul{
+        padding-bottom: 20px;
+    }
+    input#submit{
+        margin-bottom: 10px
+    }
+
+  /*Episodes*/
+#episodes{
+  width:90%;
+}
+
+#aboutus{
+  width: 90%;
+}
+
+#gossipgif{
+  margin:auto;
+width: 90%;
+margin-bottom:6px;
+}
+    /*hamburger*/
+    .hamburger-icon{
+      width: 2.5rem;
+      float: left;
+      margin: 1em;
+      position: fixed;
+    }
+
+    .line{
+      width: 2.5rem;
+      height: .3125rem;
+      background: white;
+      transition: 0.5s;
+      border-radius: 2.5rem;
+      margin-bottom: .52em;
+      opacity: 1;
+      /* 1. Set the transition property on the .line class */
+      transition: all 1s ease;
+    }
+
+    /* Second line */
+    .active .line:nth-child(2) {
+      /* 2. When the active class is added to the .hamburger-icon, fade the middle line out (hint: you can use the 'opacity' property). */
+      opacity: 0;
+     }
+
+    /* Top line */
+    .active .line:first-child {
+      transform: rotate(45deg);
+      transform-origin: 0 0;
+    }
+
+    /* Bottom line */
+    .active .line:last-child {
+      transform: rotate(-45deg);
+      transform-origin: 0 5px;
+    }
+
+
+
+
+
+
+}

@@ -84,4 +84,23 @@ function backButton () {
 // });
 
 
+$('#mobilenav').hide();
+// Hamburger
+$('.hamburger-icon').on('click', function(){
+    $(this).toggleClass('active');
+    $('#mobilenav').show('.5s');
+    $('.hamburger-icon').on('click', function(){
+        $(this).removeClass('active');
+        $('#mobilenav').hide();
 
+    });
+
+});
+
+
+
+$('#mobilenav a').on('click', function(){
+    $('#mobilenav').hide();
+        $('.hamburger-icon').removeClass('active');
+
+});

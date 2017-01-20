@@ -241,7 +241,7 @@ body{
 
 #headertitle{
     margin:auto;
-    width: 50%;
+    width: 90%;
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -355,7 +355,6 @@ form{
 .foot{
   font-size: 1rem;
   color:white;
-  width: ;
 }
 
 
@@ -373,8 +372,8 @@ form{
   color: #D9B855;
   font-style:italic;
   font-size: 5rem;
-  line-height: 100%;    
-   padding: 5px;
+  line-height: 100%;
+padding: 5px;
    width: 60%;
    margin:auto;
 
@@ -383,73 +382,19 @@ form{
    height: 30px;
 }
 
-/*#nav ul {
-   margin: auto;
-   padding: 0;    
-}*/
-
 
 
 #nav li a:hover {
-   font-style: italic;   
+   font-style: italic;
 }
 br.clearLeft {
-   clear: left;        
+   clear: left;
 }​
 
 
-
-@media (max-width: 600px) {
-  /*form*/
-  #form{
-    background: red;
-  }
-
-  #rightbox{
-      width: 100%;
-      margin:0;
-      text-align: center;
-  }
-  #fullName, #email, #charac{
-    width:60%;
-    margin:5px;
-    padding: 10px;
-    height: 40px;
-    -webkit-box-sizing: border-box;
-  }
-  #message{
-    height: 120px;
-    width: 100%;
-    padding:10px;
-    margin:auto;
-    margin-top: 5px;
-    float: none;
-    -webkit-box-sizing: border-box;
-  }
-  #dish{
-    width: 60%;
-    margin:auto;
-  }
-  #submit{
-    width: 60%;
-  }
-
-    /*FOOTER*/
-  .foot{
-    display: block;
-  }
+#mobilenav ul{
+    display:none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -541,13 +486,13 @@ br.clearLeft {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+/*@media print{
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+     Style adjustments for high resolution devices 
 }
-
+*/
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */*/
+! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -46,7 +46,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -198,12 +197,12 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-/*@media print,
+@media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
-     Style adjustments for high resolution devices 
-}*/
+    /* Style adjustments for high resolution devices */
+}
 
 /* ==========================================================================
    Print styles.
@@ -351,9 +350,8 @@ ul{
 }
 
 
-p{
-  line-height: 1.5rem;
-}
+
+
 body{
     background-color: black;
     /*background-image: url("../img/chersubi.png");*/
@@ -438,8 +436,8 @@ body{
 
 #rightbox{
     float: left;
-    width: 50%;
-    margin-right:auto;
+    width: 100%;
+    margin:auto;
     text-align: center;
 }
 
@@ -459,7 +457,7 @@ body{
 
 textarea{
   height: 180px;
-  width: 30%;
+  width: 60%;
   padding: 10px;
   margin:5px;
   color: #253C59;
@@ -475,7 +473,7 @@ textarea{
     width: 60%;
     margin: auto;
 }
-#submit{
+/*#submit{
   width: 58%;
   margin:auto;
   margin-top: 20px;
@@ -487,10 +485,51 @@ textarea{
   background-color: #BF9A56;
  text-align:center;
  margin-bottom: 30px;
-}
+}*/
 form{
    text-align:center;
 
+}
+
+
+
+  #rightbox{
+      width: 100%;
+      margin:0;
+      text-align: center;
+  }
+  #fullName, #email, #charac{
+    width:60%;
+    margin:5px;
+    padding: 10px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+  }
+  #message{
+    height: 120px;
+    width: 100%;
+    padding:10px;
+    margin:auto;
+    margin-top: 5px;
+    float: none;
+    -webkit-box-sizing: border-box;
+  }
+  #dish{
+    width: 60%;
+    margin:auto;
+  }
+  #submit{
+    width: 60%;
+  }
+
+    /*FOOTER*/
+  .foot{
+    display: block;
+  }
+}
+
+p{
+  line-height: 1.5rem;
 }
 
 
@@ -584,48 +623,10 @@ br.clearLeft {
 
 
 
-@media(max-width:550px){
-  /*form*/
-  #form{
-    background: red;
-  }
 
-  #rightbox{
-      width: 100%;
-      margin:0;
-      text-align: center;
-  }
-  #fullName, #email, #charac{
-    width:60%;
-    margin:5px;
-    padding: 10px;
-    height: 40px;
-    -webkit-box-sizing: border-box;
-  }
-  #message{
-    height: 120px;
-    width: 100%;
-    padding:10px;
-    margin:auto;
-    margin-top: 5px;
-    float: none;
-    -webkit-box-sizing: border-box;
-  }
-  #dish{
-    width: 60%;
-    margin:auto;
-  }
-  #submit{
-    width: 60%;
-  }
-
-    /*FOOTER*/
-  .foot{
-    display: block;
-  }
+p{
+  line-height: 2rem;
 }
-
-
 
 
 

@@ -4,7 +4,21 @@
 
 
 /* PHOTO CAROUSEL */
-var images = ['https://media.giphy.com/media/NLvGVyxOwVlLi/giphy.gif', 'https://media.giphy.com/media/2pYzC4vgm29UY/giphy.gif', 'https://media.giphy.com/media/xTiTnqXZHLUd9wC9c4/giphy.gif'];
+var images = ['https://media.giphy.com/media/NLvGVyxOwVlLi/giphy.gif', 
+    'https://media.giphy.com/media/2pYzC4vgm29UY/giphy.gif', 
+    'https://media.giphy.com/media/xTiTnqXZHLUd9wC9c4/giphy.gif',
+    'https://media.giphy.com/media/t4g5L79mGrnIQ/giphy.gif',
+    'https://media.giphy.com/media/ZUEaJDyaHNP5m/giphy.gif',
+    'https://media.giphy.com/media/3M5J7yedLPCSs/giphy.gif',
+    'https://media.giphy.com/media/5yLgoc7NuyKE9aHTEGY/giphy.gif',
+
+    'https://media.giphy.com/media/7MuNcFGThW6LC/giphy.gif',
+    'https://media.giphy.com/media/KzcG3wMva1wAg/giphy.gif',
+    'https://media.giphy.com/media/QxOS6ox7NDXEI/giphy.gif',
+    'https://media.giphy.com/media/m5OjKyCdcJG0w/giphy.gif',
+    'https://media.giphy.com/media/upZz6InW5KGwU/giphy.gif',
+
+    ];
 
 var index = 0;
 
@@ -87,11 +101,13 @@ function backButton () {
 $('#mobilenav').hide();
 // Hamburger
 $('.hamburger-icon').on('click', function(){
-    $(this).toggleClass('active');
-    $('#mobilenav').show('.5s');
-    $('.hamburger-icon').on('click', function(){
+    $(this).toggleClass('active');    
+    event.preventDefault();
+    $('#mobilenav').toggle('.5s');
+    on('click', function(){
         $(this).removeClass('active');
-        $('#mobilenav').hide();
+        $('#mobilenav').toggle();
+        event.preventDefault();
 
     });
 

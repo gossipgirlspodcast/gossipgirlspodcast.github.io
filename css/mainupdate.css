@@ -116,6 +116,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: #BF9A56;
 }
 
 
@@ -244,11 +245,13 @@ body{
     width: 90%;
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     /*font-style:italic;*/
     margin-top: 50px;
-    padding: 30px;
+    padding: 20px;
     margin-top: 0;
+       font-family: 'Cormorant', serif;
+       font-weight: 400;
 }
 
 #rightbox{
@@ -312,10 +315,10 @@ form{
 /*GALLERY*/
 
 .btn {
-  background-color: BF9A56;
+  background-color: #BF9A56;
   padding: 6px 12px;
   margin: 0 10px 0 0;
-  color: purple;
+  color: white;
   font-size: 14px;
   text-align: center;
   vertical-align: middle;
@@ -370,12 +373,13 @@ form{
 
 #logo {
   color: #D9B855;
-  font-style:italic;
   font-size: 5rem;
   line-height: 100%;
 padding: 5px;
    width: 60%;
    margin:auto;
+   font-family: 'Cormorant', serif;
+   font-style: bold;
 
 }
 #navWrap {
@@ -392,9 +396,6 @@ br.clearLeft {
 }​
 
 
-#mobilenav ul{
-    display:none;
-}
 
 
 
